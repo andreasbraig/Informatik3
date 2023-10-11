@@ -12,6 +12,7 @@ int main()
 {
     MyString a;
     MyString b = "Test";
+    MyString Demo= "Ich möchte hier mal einen String mit wesentlich mehr als 100 Zeichen erstellen mal schauen ob ich das hinbekomme könnte schwierig werden ";
 
     a.print();
     printf("Laenge a=%d\n", a.length());
@@ -22,5 +23,9 @@ int main()
 
     a.print();
     printf("Laenge a=%d\n", a.length());
+
+    Demo.print();
+    printf("Laenge a 0 %d \n", Demo.length());
+
 }
 

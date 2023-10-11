@@ -5,14 +5,23 @@ class MyString
 private:
 
     int len;
-    const char* text;
+    char* text;
 
 public:
 
+    //Konstruktor 
     MyString();
-    MyString(char*);
+    MyString(const char*);
+    const MyString& Copy (const MyString&);
+    //Destruktor 
+    ~MyString();
     //Methoden
     void print();
     int length();
+
+    //Operatoren 
+    const MyString& operator = (const MyString&);
+
+
     
 };
